@@ -1,3 +1,32 @@
+Самое важное:
+0. Сначала пропишите в командной строке команду:		 composer install
+1. Выполните следующую команду:		cp -a .env.example .env     -> php artisan key:generate
+2. Выполните команду: npm install
+3. Выполните команду: npm run build
+4. Подключите локально SQL (я использовал MySQL, запущенный на xampp)
+5. Проведите миграцию при помощи команды: php artisan migrate
+6. Запустите локальный сервер через - php artisan serve (bash должен находиться в папке)
+7. Запускайте страницу http://127.0.0.1:8000/books    (Выводится список книг, кнопка "Добавить книгу" открывает view с добавлением книги)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
