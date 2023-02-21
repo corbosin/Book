@@ -1,9 +1,18 @@
 Самое важное:
 0. Сначала пропишите в командной строке команду:		 composer install
-1. Выполните следующую команду:		cp -a .env.example .env     -> php artisan key:generate
+1. Выполните следующую команду:		cp -a .env.example .env     -> php artisan key:generate   ->
 2. Выполните команду: npm install
 3. Выполните команду: npm run build
 4. Подключите локально SQL (я использовал MySQL, запущенный на xampp)
+    Настройки базы данных можно провести в файле .env в корневой папке проекта по следующим строкам:
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=laravel
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+
 5. Проведите миграцию при помощи команды: php artisan migrate
 6. Запустите локальный сервер через - php artisan serve (bash должен находиться в папке)
 7. Запускайте страницу http://127.0.0.1:8000/books    (Выводится список книг, кнопка "Добавить книгу" открывает view с добавлением книги)
